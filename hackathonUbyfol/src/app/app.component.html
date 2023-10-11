@@ -1,5 +1,5 @@
-<div class="page">
-  <div class="topBar">
+<div class="page" data-aos="fade-up">
+  <div class="topBar" >
     <div class="logo" (click)="redirect('https://ubyfol.com/')"></div>
     <div class="sections">
       <div class="section"><a href="#aboutHack" appScrollSuave>Sobre</a></div>
@@ -8,23 +8,24 @@
       </div>
       <div class="section"><a href="#goals" appScrollSuave>Objetivo</a></div>
       <div class="section"><a href="#carrousel" appScrollSuave>Galeria</a></div>
+      <div class="section"><a href="#prize" appScrollSuave>Premiação</a></div>
       <div class="section">
         <a href="#supporters" appScrollSuave>Apoiadores</a>
       </div>
     </div>
   </div>
-  <div class="banner">
+  <div class="banner" >
     <div class="inscription">
       <button (click)="subscribe()">INSCREVER-SE</button>
       <div class="about" style="margin-top: 1.5%">
-        <span>O Hackathon será presencial em Uberaba - MG, e inicia no dia 27 de Outubro, as 19h</span>
+        <span>O Hackathon será presencial em Uberaba - MG e começará no dia 27 de Outubro, às 19h</span>
       </div>
       <div class="about" style="margin-top: 20px;">
         <span>Vagas limitadas!</span>
       </div>
     </div>
   </div>
-  <div id="aboutHack" class="aboutHack">
+  <div id="aboutHack" class="aboutHack" data-aos="fade-right">
     <div class="divFigure">
       <div class="figure"></div>
     </div>
@@ -65,7 +66,7 @@
       </div>
     </div>
   </div>
-  <div id="moreAbout" class="moreAbout">
+  <div id="moreAbout" data-aos="fade-left" class="moreAbout">
     <div class="title">
       <span
         ><span style="color: #36bd7c">[</span> Cronograma do evento
@@ -102,8 +103,8 @@
       <div class="cardAbout">
         <div class="titleAboutDate">
           <span *ngIf="selectedDiv == '27'">Sexta-Feira (27/10/2023)</span
-          ><span *ngIf="selectedDiv == '28'">Sexta-Feira (28/10/2023)</span
-          ><span *ngIf="selectedDiv == '29'">Sexta-Feira (29/10/2023)</span>
+          ><span *ngIf="selectedDiv == '28'">Sábado (28/10/2023)</span
+          ><span *ngIf="selectedDiv == '29'">Domingo (29/10/2023)</span>
         </div>
         <div class="bodyAboutDate">
           <div class="local">
@@ -225,7 +226,25 @@
       </div>
     </div>
   </div>
-  <div id="goals" class="goals">
+  <div id="prize"  data-aos="fade-right">
+    <div class="title">
+      <span style="color: #076caf">[</span> PREMIAÇÃO 
+          <span style="color: #076caf">]</span>
+      
+    </div>
+    <div class="subTitle">
+      16 mil em premiação para 1° e 2° de cada temática 
+    </div>
+    <div class="prizes">
+      <div class="prize">
+        1° lugar: <span class="value">R$: 6.000,00</span>
+      </div>
+      <div class="prize">
+        2° lugar: <span class="value">R$: 2.000,00</span>
+      </div>
+    </div>
+  </div>
+  <div id="goals"  data-aos="fade-up-left" class="goals">
     <div class="titleGoals">
       <span
         ><span style="color: #076caf">[</span> Objetivo do Hackathon
@@ -243,7 +262,7 @@
       >
     </div>
   </div>
-  <div id="carrousel" class="carrousel">
+  <div id="carrousel" data-aos="flip-up" class="carrousel">
     <div class="title">
     </div>
     <div class="text">
@@ -265,19 +284,25 @@
   <div id="supporters" class="supporters">
     <div class="title">
       <span
-        ><span style="color: #ee2d39">[</span> Apoiadores
-        <span style="color: #ee2d39">]</span></span
+        ><span style="color: #04395a">[</span> Apoiadores
+        <span style="color: #04395a">]</span></span
       >
     </div>
-    <div class="divSuporters">
+    <div class="divSuporters" data-aos="zoom-in">
       <div class="divSuportersItens">
         <div class="supporter1">
           <div class="image" (click)="redirect('https://fazu.br/')"></div>
         </div>
         <div class="supporter2">
-          <div
+          <div style="background-color: #04395ad1;"
             class="image"
-            (click)="redirect('https://iftm.edu.br/uraparquetecnologico/')"
+            (click)="redirect('https://portal.uberaba.mg.gov.br/')"
+          ></div>
+        </div>
+        <div class="supporter3">
+          <div style="background-color: #04395a00;"
+            class="image"
+            (click)="redirect('https://ubyfol.com/')"
           ></div>
         </div>
       </div>
