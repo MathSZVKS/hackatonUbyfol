@@ -14,8 +14,9 @@ export class ScrollSuaveDirective {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
+      const yOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: yOffset, behavior: 'smooth' });
     }
   }
-
 }
+

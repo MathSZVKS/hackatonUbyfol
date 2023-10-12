@@ -14,6 +14,14 @@ export class AppComponent {
   div27: any;
   div28: any;
   div29: any;
+  images = ['../assets/img/ubycover.png','../assets/img/allas.png','../assets/img/vitales.png','../assets/img/moon.png']
+  cardBody = ['A mais completa e moderna tecnologia para recobrimento de fertilizantes de solo.<br><br>AntiDusting, anticaking, inibidores de urease aditivados e micros de alta eficiência para o solo. Presente em todo território nacional, Marrocos e Leste Europeu.',
+
+  'Atua como operadora logística de serviços como transporte, armazenagem e assessoria.<br><br>É o transporte rápido e seguro para clientes Ubyfol e Ubycover tornando-se um diferencial competitivo da Uby nos mercados de especialidades onde atua.', 
+  'Atua no segmento de controle biológicos para agricultura em todo território nacional', 
+  'HUB de inovação para o agronegócio em parceria com AGTech Garage e prefeitura de Uberaba'
+  ];
+
 
   ngOnInit() {
     this.hideOrShowPin('27');
@@ -24,7 +32,8 @@ export class AppComponent {
     this.div27.style.display = 'none';
     this.div28.style.display = 'none';
     this.div29.style.display = 'none';
-  }
+
+  }  
 
   hideOrShowPin(pin: string) {
     switch (pin) {
