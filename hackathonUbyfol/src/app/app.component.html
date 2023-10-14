@@ -1,5 +1,5 @@
 <div class="page" data-aos="fade-up">
-  <div class="topBar" >
+  <div class="topBar">
     <div class="logo" (click)="redirect('https://ubyfol.com/')"></div>
     <div class="sections">
       <div class="section"><a href="#aboutHack" appScrollSuave>Sobre</a></div>
@@ -8,19 +8,22 @@
       </div>
       <div class="section"><a href="#prize" appScrollSuave>Premiação</a></div>
       <div class="section"><a href="#goals" appScrollSuave>Objetivo</a></div>
-      <div class="section"><a href="#carrousel" appScrollSuave>Galeria</a></div>     
+      <div class="section"><a href="#carrousel" appScrollSuave>Galeria</a></div>
       <div class="section">
         <a href="#supporters" appScrollSuave>Apoiadores</a>
       </div>
     </div>
   </div>
-  <div class="banner" >
+  <div class="banner">
     <div class="inscription">
       <button (click)="subscribe()">INSCREVER-SE</button>
       <div class="about" style="margin-top: 1.5%">
-        <span>O Hackathon será presencial em Uberaba - MG e começará no dia 27 de Outubro, às 19h</span>
+        <span
+          >O Hackathon será presencial em Uberaba - MG e começará no dia 27 de
+          Outubro, às 19h</span
+        >
       </div>
-      <div class="about" style="margin-top: 20px;">
+      <div class="about" style="margin-top: 20px">
         <span>Vagas limitadas!</span>
       </div>
     </div>
@@ -51,7 +54,10 @@
         </div>
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
-          <span>Participantes: Serão permitidos 4 a 6 participantes por grupo. É possível inscrever equipes completas</span>
+          <span
+            >Participantes: Serão permitidos 4 a 6 participantes por grupo. É
+            possível inscrever equipes completas</span
+          >
         </div>
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
@@ -60,7 +66,11 @@
         <div class="line">
           <fa-icon [icon]="faCheckCircle"></fa-icon>
           <span
-            >As inscrições são gratuitas e abertas ao público, podendo ser feitas até o dia 18 de Outubro. Teremos vagas limitadas. Todos os inscritos serão avaliados por uma comissão das instituições envolvidas, sendo os selecionados comunicados via e-mail no dia 20 de Outubro</span
+            >As inscrições são gratuitas e abertas ao público, podendo ser
+            feitas até o dia 18 de Outubro. Teremos vagas limitadas. Todos os
+            inscritos serão avaliados por uma comissão das instituições
+            envolvidas, sendo os selecionados comunicados via e-mail no dia 20
+            de Outubro</span
           >
         </div>
       </div>
@@ -122,11 +132,11 @@
                 da Ubyfol, Fazu e Parque Tecnológico</span
               >
               <span *ngIf="selectedDiv == '28'"
-                >08h00 - Atividades de mentoria (minicurso de Canvas) </span
-              >
+                >08h00 - Atividades de mentoria (minicurso de Canvas)
+              </span>
               <span *ngIf="selectedDiv == '29'"
-                >08h00 - Atividade de mentoria (minicurso de MVP) </span
-              >
+                >08h00 - Atividade de mentoria (minicurso de MVP)
+              </span>
             </div>
           </div>
           <div class="lineAboutDate">
@@ -185,11 +195,11 @@
               <span *ngIf="selectedDiv == '27'"
                 >21h20 - Dinâmica de integração de grupos.</span
               >
-              <br>
+              <br />
               <span *ngIf="selectedDiv == '27'"
                 >21h20 - Dinâmica de integração de grupos.</span
               >
-              
+
               <span *ngIf="selectedDiv == '28'"
                 >16h00 - Pré-apresentação das soluções para banca de
                 mentores</span
@@ -206,8 +216,7 @@
               <fa-icon [icon]="faCheckCircle"></fa-icon>
             </div>
             <div class="textAboutDate">
-              <span *ngIf="selectedDiv == '27'"
-                >22h00 - Encerramento.</span>
+              <span *ngIf="selectedDiv == '27'">22h00 - Encerramento.</span>
             </div>
           </div>
           <div *ngIf="selectedDiv == '28'" class="lineAboutDate">
@@ -228,46 +237,66 @@
             <div class="textAboutDate">
               <span *ngIf="selectedDiv == '28'"
                 >19h00 - Desenvolvimento das soluções pelas equipes
-                (virada)</span>
-              
+                (virada)</span
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="prize"  data-aos="fade-right">
-    <div class="title">
-      <span style="color: #076caf;">[</span> PREMIAÇÃO 
-          <span style="color: #076caf">]</span>
-          <img src="../assets/img/celebration.png" alt="" class="celebration">
-      
+
+  <div id="prize" data-aos="fade-right">
+    <div class="prizeTitle"> <div class="title">
+      <span
+        ><span style="color: #bd7e36">[</span> Premiação
+        <span style="color: #bd7e36">]</span></span
+      >
+    </div></div>
+
+    <div class="divFigures">
+      <div class="leftPrize">
+        <div class="man"></div>
+      </div>
+
+    <div class="rightPrize"></div>
     </div>
-    <div class="subTitle">
-      Neste Hackathon teremos quatro premiações!! 
+    
+    
+
+    <!-- <div class="title">
+      <span
+        ><span style="color: #3671bd">[</span> Premiação
+        <span style="color: #3671bd">]</span></span
+      >
     </div>
+    <div class="subTitle">Neste Hackathon teremos quatro premiações!!</div>
     <div class="prizes">
       <div class="firstTheme">
         <div class="prize">
-          1º Lugar da Temática 1 | <span class="value">R$ 6.000,00 para toda a equipe; </span>
+          1º Lugar da Temática 1 |
+          <span class="value">R$ 6.000,00 para toda a equipe; </span>
         </div>
         <div class="prize">
-          2º Lugar da Temática 1 | <span class="value">R$ 2.000,00 para toda a equipe; </span>
+          2º Lugar da Temática 1 |
+          <span class="value">R$ 2.000,00 para toda a equipe; </span>
         </div>
       </div>
       <div class="secondTheme">
         <div class="prize">
-          1º Lugar da Temática 2 | <span class="value">R$ 6.000,00 para toda a equipe; </span>
+          1º Lugar da Temática 2 |
+          <span class="value">R$ 6.000,00 para toda a equipe; </span>
         </div>
         <div class="prize">
-          2º Lugar da Temática 2 | <span class="value">R$ 2.000,00 para toda a equipe; </span>
+          2º Lugar da Temática 2 |
+          <span class="value">R$ 2.000,00 para toda a equipe; </span>
         </div>
-      </div>    
-      
+      </div>
     </div>
-    <img src="../assets/img/winner.png.png" alt="" class="winner">  
+    <img src="../assets/img/winner.png.png" alt="" class="winner" /> -->
   </div>
-  <div id="goals"  data-aos="fade-up-left" class="goals">
+
+  <div id="goals" data-aos="fade-up-left" class="goals">
     <div class="titleGoals">
       <span
         ><span style="color: #076caf">[</span> Objetivo do Hackathon
@@ -275,7 +304,7 @@
       >
     </div>
     <div class="textGoals">
-      <span
+      <span style="color: white"
         >Estamos empenhados na solução de desafios concretos, sobretudo aqueles
         identificados pela Ubyfol no contexto dos setores de inovação e acesso
         ao mercado. Para alcançar esse objetivo, buscamos envolver participantes
@@ -285,40 +314,43 @@
       >
     </div>
   </div>
+
   <div id="carrousel" data-aos="flip-up" class="carrouselContainer">
     <div class="mainCard">
-      <div class="title">
-      </div>
+      <div class="title"></div>
       <div class="text">
         <span
           >A Ubyfol é uma multinacional brasileira especialista em nutrição
           vegetal que trabalha no desenvolvimento de produtos especiais,
           fornecendo macro e micronutrientes para recobrimento de grânulos,
-          tratamento de sementes, mudas, toletes, e aplicações foliares para todas
-          as culturas agrícolas. Fundada em 1985, a empresa atua em todo o
-          território nacional, no Paraguai e em Portugal. Eleita a melhor empresa
-          de nutrição vegetal do Brasil por diversas instituições independentes, a
-          Ubyfol semeia a valorização humana como cultura empresarial e une
-          esforços para levar ao agricultor soluções eficientes, apoiadas no
-          conhecimento científico e no domínio das tecnologias mais
-          recentes.</span
+          tratamento de sementes, mudas, toletes, e aplicações foliares para
+          todas as culturas agrícolas. Fundada em 1985, a empresa atua em todo o
+          território nacional, no Paraguai e em Portugal. Eleita a melhor
+          empresa de nutrição vegetal do Brasil por diversas instituições
+          independentes, a Ubyfol semeia a valorização humana como cultura
+          empresarial e une esforços para levar ao agricultor soluções
+          eficientes, apoiadas no conhecimento científico e no domínio das
+          tecnologias mais recentes.</span
         >
       </div>
     </div>
-    
 
-    <splide  class="carrousel" [options]="{ type: 'loop', perPage: 1, keyboard: true, focus : 'center',}">
+    <splide
+      class="carrousel"
+      [options]="{ type: 'loop', perPage: 1, keyboard: true, focus : 'center',}"
+    >
       <splide-slide *ngFor="let image of images; let i = index">
         <div class="card">
-          <div class="cardTitle" [style.background-image]="'url(' + image + ')'"></div>
-          <div class="cardBody"  [innerHTML]="cardBody[i]">
-          </div>
+          <div
+            class="cardTitle"
+            [style.background-image]="'url(' + image + ')'"
+          ></div>
+          <div class="cardBody" [innerHTML]="cardBody[i]"></div>
         </div>
-         
       </splide-slide>
-   </splide>
-   
+    </splide>
   </div>
+
   <div id="supporters" class="supporters">
     <div class="title">
       <span
@@ -332,13 +364,17 @@
           <div class="image" (click)="redirect('https://fazu.br/')"></div>
         </div>
         <div class="supporter2">
-          <div style="background-color: #04395ad1;"
+          <div
+            style="background-color: #04395ad1"
             class="image"
-            (click)="redirect('https://portal.uberaba.mg.gov.br/parquetecnologico/')"
+            (click)="
+              redirect('https://portal.uberaba.mg.gov.br/parquetecnologico/')
+            "
           ></div>
         </div>
         <div class="supporter3">
-          <div style="background-color: #04395a00;"
+          <div
+            style="background-color: #04395a00"
             class="image"
             (click)="redirect('https://ubyfol.com/')"
           ></div>
@@ -386,3 +422,12 @@
     </div>
   </div>
 </div>
+
+<script>VanillaTilt.init(document.querySelector(".prize"), {
+  max: 20,
+  speed: 300,
+  reverse: true,
+  scale: 1.2
+});</script>
+
+

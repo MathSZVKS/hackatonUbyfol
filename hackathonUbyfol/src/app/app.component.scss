@@ -215,45 +215,84 @@
       }
     }
   }
+
   #prize {
     display: flex;
     align-items: center;
-    flex-direction: column;
     font-family: DiscoverRegular;
     font-weight: bold;
     width: 100%;
     height: 36rem;
+    margin-top: 2%;
     justify-content: center;
     align-items: center;
-    background: rgb(0, 172, 89);
-    background: radial-gradient(
-      circle,
-      rgba(0, 172, 89, 0.711922268907563) 0%,
-      rgb(41, 127, 153) 100%
+    background: rgb(255, 255, 255);
+    flex-direction: column;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.8911939775910365) 14%,
+      rgba(172, 203, 212, 1) 100%
     );
-    .title{
-      font-size: 3.6rem;
-      color: #04395a;
-      padding-block: 1%;
-      font-weight: bolder;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+    .prizeTitle {
       width: 100%;
-      .celebration{
-        width: 5rem;
-        height: auto;
+      height: 15%;
+
+      .title {
+        font-size: 3.6rem;
+        color: #e4b636;
+        padding-block: 1%;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .celebration {
+          width: 5rem;
+          height: auto;
+        }
       }
-      
     }
-    .subTitle{
+
+    .divFigures {
+      width: 100%;
+      height: 85%;
+      display: flex;
+
+      .leftPrize {
+        width: 50%;
+        height: 100%;
+        background-image: url(../assets/img/holofotes.png);
+        background-size: 522px;
+        background-repeat: no-repeat;
+        background-position: top;
+
+        .man {
+          position: relative;
+          top: 59%;
+          left: 45%;
+          width: 100px;
+          height: 200px;
+          background-image: url(../assets/img/winner.png.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 70px;
+        }
+      }
+
+      .rightPrize {
+        width: 50%;
+        height: 100%;
+      }
+    }
+
+    .subTitle {
       color: #04395a;
       font-weight: bolder;
       font-size: 2rem;
       padding-bottom: 2%;
-      
     }
-    .prizes{
+    .prizes {
       color: #ffffff;
       font-size: 1.6rem;
       padding-bottom: 0.7%;
@@ -262,17 +301,15 @@
       align-items: center;
       justify-content: center;
       gap: 2rem;
-      .firstTheme{
-
+      .firstTheme {
       }
-      .secondTheme{
+      .secondTheme {
         margin-right: 2rem;
       }
-     
-      .prize{
+
+      .prize {
         padding-bottom: 6%;
       }
-      
     }
     .winner {
       width: 5rem;
@@ -493,13 +530,13 @@
   .goals {
     width: 100%;
     height: 455px;
-    background-color:#04395a ;
+    background-color: #04395a;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     text-align: center;
     flex-direction: column;
-    box-shadow: 400px 400px 400px 400px rgb(4,57,90);
+    box-shadow: 400px 400px 400px 400px rgb(4, 57, 90);
 
     .titleGoals {
       width: 100%;
@@ -510,7 +547,6 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 2%;
-      
 
       span {
         font-size: 60px;
@@ -527,7 +563,7 @@
       span {
         font-family: DiscoverRegular;
         font-size: 23.5px;
-        color: #11B264;
+        color: #11b264;
       }
 
       .lastText {
@@ -539,7 +575,7 @@
 
   .carrouselContainer {
     width: 100%;
-    height:37rem;
+    height: 37rem;
     gap: 2rem;
     background: rgb(255, 255, 255);
     background: linear-gradient(
@@ -551,7 +587,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    .mainCard{
+    .mainCard {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -566,13 +602,13 @@
         background-size: contain;
         background-position: center;
       }
-  
+
       .text {
         width: 70%;
         height: 200px;
         display: flex;
         text-align: center;
-  
+
         span {
           font-size: 20px;
           font-weight: bold;
@@ -581,14 +617,14 @@
         }
       }
     }
-    .carrousel{
+    .carrousel {
       width: 50%;
-      height:26rem ;
+      height: 26rem;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 10px;
-      .card{
+      .card {
         height: 30rem;
         background-color: white;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -597,13 +633,13 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width:99%;
+        width: 99%;
         background: linear-gradient(
           293deg,
           rgb(15, 67, 99) 0%,
           rgba(53, 169, 203, 1) 100%
         );
-        .cardTitle{
+        .cardTitle {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -616,24 +652,22 @@
           align-items: center;
           justify-content: center;
         }
-        .cardBody{
-            margin-top: 10px;
-            text-align: center;
-            height: 60%;
-            display: flex;
-            padding-inline: 5%;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.4rem;
-            font-family: DiscoverRegular;
-            color: #0bd373;
-            font-weight: bold;
+        .cardBody {
+          margin-top: 10px;
+          text-align: center;
+          height: 60%;
+          display: flex;
+          padding-inline: 5%;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.4rem;
+          font-family: DiscoverRegular;
+          color: #0bd373;
+          font-weight: bold;
         }
       }
     }
-
-   
   }
 
   .supporters {
@@ -675,7 +709,6 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      
 
       .divSuportersItens {
         width: 100%;
@@ -774,7 +807,6 @@
             background-size: contain;
             background-position: center;
             background-size: cover;
-
           }
         }
       }
