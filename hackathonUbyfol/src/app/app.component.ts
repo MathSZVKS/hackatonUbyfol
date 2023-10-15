@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit  } from '@angular/core';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({

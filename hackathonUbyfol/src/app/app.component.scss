@@ -228,15 +228,17 @@
     align-items: center;
     background: rgb(255, 255, 255);
     flex-direction: column;
+    background: rgb(255, 255, 255);
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.8911939775910365) 14%,
-      rgba(172, 203, 212, 1) 100%
+      rgba(212, 205, 172, 1) 100%
     );
 
     .prizeTitle {
       width: 100%;
       height: 15%;
+      margin-bottom: 2%;
 
       .title {
         font-size: 3.6rem;
@@ -247,6 +249,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+
         .celebration {
           width: 5rem;
           height: auto;
@@ -260,17 +263,17 @@
       display: flex;
 
       .leftPrize {
-        width: 50%;
+        width: 40%;
         height: 100%;
         background-image: url(../assets/img/holofotes.png);
-        background-size: 522px;
+        background-size: 482px;
         background-repeat: no-repeat;
         background-position: top;
 
         .man {
           position: relative;
-          top: 59%;
-          left: 45%;
+          top: 55.6%;
+          left: 43.5%;
           width: 100px;
           height: 200px;
           background-image: url(../assets/img/winner.png.png);
@@ -281,41 +284,40 @@
       }
 
       .rightPrize {
-        width: 50%;
+        width: 60%;
         height: 100%;
-      }
-    }
 
-    .subTitle {
-      color: #04395a;
-      font-weight: bolder;
-      font-size: 2rem;
-      padding-bottom: 2%;
-    }
-    .prizes {
-      color: #ffffff;
-      font-size: 1.6rem;
-      padding-bottom: 0.7%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      .firstTheme {
-      }
-      .secondTheme {
-        margin-right: 2rem;
-      }
+        .subTitle {
+          color: #04395a;
+          font-weight: bolder;
+          font-size: 1.5rem;
+          margin-top: 6%;
+          padding-bottom: 2%;
+        }
 
-      .prize {
-        padding-bottom: 6%;
+        .prizes {
+          color: #7e5f5f;
+          font-size: 1.3rem;
+          padding-bottom: 0.7%;
+          margin-top: 2%;
+          display: flex;
+          flex-direction: row;
+          align-items: left;
+          justify-content: left;
+          gap: 2rem;
+
+          .secondTheme {
+            margin-right: 2rem;
+          }
+
+          .prize {
+            padding-bottom: 6%;
+          }
+        }
       }
-    }
-    .winner {
-      width: 5rem;
-      height: auto;
     }
   }
+
   .moreAbout {
     width: 100%;
     height: 970px;
@@ -426,15 +428,18 @@
       align-items: top;
       text-align: center;
       justify-content: center;
+      background-image: url(../assets/img/appCortado.png);
+      background-repeat: no-repeat;
+      background-position: right;
 
       .cardAbout {
         margin-top: 2%;
-        background: rgb(0, 172, 89);
         background: radial-gradient(
           circle,
-          rgba(0, 172, 89, 0.711922268907563) 0%,
-          rgb(41, 127, 153) 100%
+          rgba(0, 93, 233, 0.712) 0%,
+          rgb(41 127 153 / 52%) 100%
         );
+
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 20px;
         width: 60%;
@@ -444,8 +449,8 @@
         transition: 200ms linear;
 
         &:hover {
-          transform: scale(1.1);
-          transition: 200ms linear;
+          transform: scale(1.03);
+          transition: 600ms linear;
         }
 
         .titleAboutDate {
@@ -461,7 +466,7 @@
             font-size: 28px;
             font-weight: bold;
             font-family: DiscoverRegular;
-            color: #032d47;
+            color: #ffffff;
           }
         }
 
@@ -481,7 +486,7 @@
               font-size: 20px;
               font-weight: bold;
               font-family: DiscoverRegular;
-              color: white;
+              color: rgb(214, 214, 214);
             }
           }
 

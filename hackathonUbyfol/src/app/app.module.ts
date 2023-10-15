@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ScrollSuaveDirective } from './directives/scroll-suave.directive';
 import { NgxSplideModule } from 'ngx-splide';
+import { LavaAnimationComponent } from './lava-animation/lava-animation.component';
 
 @NgModule({
-  declarations: [AppComponent, CarouselComponent, ScrollSuaveDirective],
-  imports: [BrowserModule, FontAwesomeModule,NgxSplideModule],
+  declarations: [AppComponent, CarouselComponent, ScrollSuaveDirective, LavaAnimationComponent],
+  imports: [BrowserModule, FontAwesomeModule, NgxSplideModule],
   providers: [],
   bootstrap: [AppComponent],
 })

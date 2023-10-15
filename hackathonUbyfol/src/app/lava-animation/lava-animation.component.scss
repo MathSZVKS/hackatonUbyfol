@@ -1,0 +1,22 @@
+.lava-bubble {
+  width: 200px;
+  height: 200px; /* Forma oval para simular uma bolha */
+  background: radial-gradient(circle, #0cb06179, #0cb061);
+  border-radius: 50%;
+  position: static;
+  bottom: 0;
+  animation: bubble-rise 10s ease-in-out infinite;
+}
+
+@keyframes bubble-rise {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    background: radial-gradient(circle, #0cb06169, #0cb061);
+  }
+  50% {
+    transform: translateY(
+      -400px
+    ); /* Aumenta a escala para simular uma bolha estourando */
+  }
+}
