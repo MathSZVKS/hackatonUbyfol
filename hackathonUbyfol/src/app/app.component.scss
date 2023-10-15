@@ -629,6 +629,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 10px;
+      
       .card {
         height: 30rem;
         background-color: white;
@@ -644,6 +645,7 @@
           rgb(15, 67, 99) 0%,
           rgba(53, 169, 203, 1) 100%
         );
+
         .cardTitle {
           display: flex;
           align-items: center;
@@ -657,6 +659,7 @@
           align-items: center;
           justify-content: center;
         }
+
         .cardBody {
           margin-top: 10px;
           text-align: center;
@@ -668,7 +671,7 @@
           align-items: center;
           font-size: 1.4rem;
           font-family: DiscoverRegular;
-          color: #0bd373;
+          color: #ffffffb4;
           font-weight: bold;
         }
       }
