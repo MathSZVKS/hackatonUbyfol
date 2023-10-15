@@ -111,7 +111,7 @@
 
   .aboutHack {
     width: 100%;
-    height: 550px;
+    height: 590px;
     background: rgb(0, 172, 89);
     background: radial-gradient(
       circle,
@@ -181,9 +181,11 @@
         flex-direction: column;
 
         .text {
+          margin-bottom: 20px;
           display: flex;
           width: 100%;
-          height: 60%;
+          height: 70%;
+          margin-bottom: 50px;
 
           span {
             font-family: DiscoverLight;
@@ -197,7 +199,7 @@
           display: flex;
           margin-bottom: 3%;
           width: 100%;
-          height: 10%;
+          height: 18%;
           align-items: center;
 
           fa-icon {
