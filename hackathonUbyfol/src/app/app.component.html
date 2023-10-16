@@ -8,7 +8,7 @@
       </div>
       <div class="section"><a href="#prize" appScrollSuave>Premiação</a></div>
       <div class="section"><a href="#goals" appScrollSuave>Objetivo</a></div>
-      <div class="section"><a href="#carrousel" appScrollSuave>Galeria</a></div>
+      <div class="section"><a href="#carrousel" appScrollSuave>Parceiros</a></div>
       <div class="section">
         <a href="#supporters" appScrollSuave>Apoiadores</a>
       </div>
@@ -307,46 +307,37 @@
   </div>
 
   <div id="carrousel" data-aos="flip-up" class="carrouselContainer">
-    <div class="mainCard">
-      <div class="title"></div>
-      <div class="text">
-        <span
-          >A Ubyfol é uma multinacional brasileira especialista em nutrição
-          vegetal que trabalha no desenvolvimento de produtos especiais,
-          fornecendo macro e micronutrientes para recobrimento de grânulos,
-          tratamento de sementes, mudas, toletes, e aplicações foliares para
-          todas as culturas agrícolas. Fundada em 1985, a empresa atua em todo o
-          território nacional, no Paraguai e em Portugal. Eleita a melhor
-          empresa de nutrição vegetal do Brasil por diversas instituições
-          independentes, a Ubyfol semeia a valorização humana como cultura
-          empresarial e une esforços para levar ao agricultor soluções
-          eficientes, apoiadas no conhecimento científico e no domínio das
-          tecnologias mais recentes.</span
-        >
+    <div class="mainItens">
+      <div class="mainCard">
+        <div class="title"></div>
+        <div class="text">
+          <span
+            >A Ubyfol é uma multinacional brasileira especialista em nutrição
+            vegetal que trabalha no desenvolvimento de produtos especiais,
+            fornecendo macro e micronutrientes para recobrimento de grânulos,
+            tratamento de sementes, mudas, toletes, e aplicações foliares para
+            todas as culturas agrícolas. Fundada em 1985, a empresa atua em todo
+            o território nacional, no Paraguai e em Portugal. Eleita a melhor
+            empresa de nutrição vegetal do Brasil por diversas instituições
+            independentes, a Ubyfol semeia a valorização humana como cultura
+            empresarial e une esforços para levar ao agricultor soluções
+            eficientes, apoiadas no conhecimento científico e no domínio das
+            tecnologias mais recentes.</span
+          >
+        </div>
+      </div>
+
+      <div class="carrousel">
+        <app-carousel></app-carousel>
       </div>
     </div>
-
-    <splide
-      class="carrousel"
-      [options]="{ type: 'loop', perPage: 1, keyboard: true, focus : 'center',}"
-    >
-      <splide-slide *ngFor="let image of images; let i = index">
-        <div class="card">
-          <div
-            class="cardTitle"
-            [style.background-image]="'url(' + image + ')'"
-          ></div>
-          <div class="cardBody" [innerHTML]="cardBody[i]"></div>
-        </div>
-      </splide-slide>
-    </splide>
   </div>
 
   <div id="supporters" class="supporters">
     <div class="title">
-      <span
-        ><span style="color: #04395a">[</span> Apoiadores
-        <span style="color: #04395a">]</span></span
+      <span style="color: white;"
+        ><span style="color: #b3b3b3">[</span> Apoiadores
+        <span style="color: #b3b3b3">]</span></span
       >
     </div>
     <div class="divSuporters" data-aos="zoom-in">
