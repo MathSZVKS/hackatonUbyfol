@@ -11,6 +11,8 @@ export class AppComponent {
   title = 'hackathonUbyfol';
   faCheckCircle = faCheckCircle;
   page = 'mobile'
+  menuOpen = false;
+  
 
   selectedDiv: string = '27';
   div27: any;
@@ -30,6 +32,12 @@ export class AppComponent {
       'menu',
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/img/menuIcon.svg")
     )
+    const larguraDaTela = window.innerWidth;
+    if(larguraDaTela < 420){
+      this.page = 'mobile'
+    } else {
+      this.page = 'desktop'
+    }
   }
   ngOnInit() {
     this.hideOrShowPin('27');
@@ -42,6 +50,9 @@ export class AppComponent {
     this.div29.style.display = 'none';
 
   }  
+  openMenu(){
+    this.menuOpen = !this.menuOpen;
+  }
 
   hideOrShowPin(pin: string) {
     switch (pin) {

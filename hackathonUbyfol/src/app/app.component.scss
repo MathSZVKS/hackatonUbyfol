@@ -64,7 +64,8 @@
     display: flex;
     align-items: center;
     text-align: center;
-    background-size: 100vw;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +76,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top:53vh;
+      margin-top:58vh;
       gap: 1rem;
 
       button {
@@ -1046,7 +1047,7 @@
     }
   
     .aboutHack {
-      height:92vh;
+      height:100vh;
       
      
       .divFigure {
@@ -1069,11 +1070,13 @@
         }
   
         .body {
-        
+        gap: 0;
+        font-size: 2.2vh;
           .text {
-
+            margin-bottom: 0;
             span {
-
+              font-size: 2.6vh;
+              margin-bottom: 2vh;
             }
           }
   
@@ -1447,7 +1450,7 @@
               text-align: center;
     
               span {
-                font-size: 1.1vw;
+                font-size: 1vw;
                 font-weight: bold;
                 font-family: DiscoverLight;
                 color: #ffffff;
@@ -1508,9 +1511,9 @@
   
   }
 
-  @media (min-width: 360px) {
+  @media (max-width: 420px) {
     .page {
-     
+     overflow: hidden;
     
       .topBar {
         display: flex;
@@ -1543,6 +1546,33 @@
               
               }
             }
+          }
+        }
+      
+      }
+      .menuSections{
+        top: 0vh;
+        display: flex;
+        flex-direction: column;
+        height: 58rem;
+        width: 100%;
+        position: fixed;
+        background-color: #04395a;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        padding-inline: 0 !important;
+        gap: 10vh;
+        font-family: DiscoverLight;
+        .section{
+          text-decoration: none;
+          color: white;
+          display: flex;
+          a{
+            text-decoration: none;
+            color: white;
+            font-size: 3vh;
           }
         }
       }

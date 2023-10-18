@@ -18,8 +18,21 @@
   </div>
   <div class="topBar" *ngIf="page == 'mobile'" >
     <div class="logo" (click)="redirect('https://ubyfol.com/')"></div>
-    <mat-icon svgIcon="menu" class="menu"  aria-hidden="false" aria-label="menu"></mat-icon>
-
+    <mat-icon (click)="openMenu()" svgIcon="menu" class="menu"  aria-hidden="false" aria-label="menu"></mat-icon>
+  </div>
+  <div class="menuSections" *ngIf="menuOpen">
+    <div (click)="openMenu()" class="section"><a href="#aboutHack" appScrollSuave>Sobre</a></div>
+    <div (click)="openMenu()" class="section">
+      <a href="#moreAbout" appScrollSuave>Cronograma</a>
+    </div>
+    <div (click)="openMenu()" class="section"><a href="#prize" appScrollSuave>Premiação</a></div>
+    <div (click)="openMenu()" class="section"><a href="#goals" appScrollSuave>Objetivo</a></div>
+    <div (click)="openMenu()" class="section">
+      <a href="#carrousel" appScrollSuave>Parceiros</a>
+    </div>
+    <div (click)="openMenu()" class="section">
+      <a href="#supporters" appScrollSuave>Apoiadores</a>
+    </div>
   </div>
   <div class="banner">
     <div class="inscription">
