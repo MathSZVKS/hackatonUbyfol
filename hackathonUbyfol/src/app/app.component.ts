@@ -1,6 +1,7 @@
 import { Component, AfterViewInit  } from '@angular/core';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,6 +10,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   title = 'hackathonUbyfol';
   faCheckCircle = faCheckCircle;
+  page = 'mobile'
 
   selectedDiv: string = '27';
   div27: any;
@@ -22,7 +24,13 @@ export class AppComponent {
   'HUB de inovação para o agronegócio em parceria com AGTech Garage e prefeitura de Uberaba'
   ];
 
-
+  constructor(  private matIconRegistry:MatIconRegistry,
+    private domSanitizer:DomSanitizer){
+    this.matIconRegistry.addSvgIcon(
+      'menu',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/img/menuIcon.svg")
+    )
+  }
   ngOnInit() {
     this.hideOrShowPin('27');
     this.div27 = document.getElementById('27');

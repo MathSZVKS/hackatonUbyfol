@@ -16,11 +16,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 100%;
   gap: 10px;
 
   div {
-    flex: 0 0 270px;
+    flex: 0 0 13.7vw;
     height: 80%;
     border-radius: 2rem;
     transition: 0.5s ease-in-out;
@@ -31,27 +31,24 @@ body {
 
     &:nth-of-type(1) {
       background: url(../../../assets/img/moon.png);
-      background-size: 200px;
+      background-size:contain;
       background-position: center;
       background-repeat: no-repeat;
       
     }
     &:nth-of-type(2) {
       background: url(../../../assets/img/allas.png);
-      background-size: 200px;
-      background-position: center;
+      background-size:contain;     background-position: center;
       background-repeat: no-repeat;
     }
     &:nth-of-type(3) {
       background: url(../../../assets/img/vitales.png);
-      background-size: 200px;
-      background-position: center;
+      background-size:contain !important;     background-position: center;
       background-repeat: no-repeat;
     }
     &:nth-of-type(4) {
       background: url(../../../assets/img/ubycover.png);
-      background-size: 200px;
-      background-position: center;
+      background-size:contain;     background-position: center;
       background-repeat: no-repeat;
     }
     
@@ -79,7 +76,7 @@ body {
         font-family: DiscoverRegular;
         display: block;
         margin-top: 5px;
-        font-size: 1rem;
+        font-size: 4vw;
       }
     }
 
@@ -93,6 +90,91 @@ body {
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+  
+    div {
+      flex: 0 0 22vw;
+      height: 80%;
+      border-radius: 2rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      box-shadow: 1px 5px 15px #808380;
+      position: relative;
+      overflow: hidden;
+  
+      &:nth-of-type(1) {
+        background: url(../../../assets/img/moon.png);
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+      }
+      &:nth-of-type(2) {
+        background: url(../../../assets/img/allas.png);
+        background-size:contain;     background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:nth-of-type(3) {
+        background: url(../../../assets/img/vitales.png);
+        background-size:contain;     background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:nth-of-type(4) {
+        background: url(../../../assets/img/ubycover.png);
+        background-size:contain;     background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .content {
+        font-size: 1.5rem;
+        color: #6e6e6e;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        opacity: 0;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        background: rgba(0, 76, 190, 0.507);
+        background: linear-gradient(
+          0deg,
+          rgba(123, 228, 131, 0.233) 0%,
+          rgba(255, 255, 255, 0.733) 100%
+        );
+        transform: translatey(100%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+        visibility: hidden;
+  
+        span {
+          font-family: DiscoverRegular;
+          display: block;
+          margin-top: 5px;
+          font-size: 1rem;
+        }
+      }
+  
+      &:hover {
+        flex: 0 0 250px;
+        box-shadow: 1px 3px 15px #04395a;
+        transform: translatey(-30px);
+      }
+  
+      &:hover .content {
+        opacity: 1;
+        transform: translatey(0%);
+        visibility: visible;
+      }
     }
   }
 }

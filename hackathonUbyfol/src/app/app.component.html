@@ -1,5 +1,5 @@
 <div class="page" data-aos="fade-up">
-  <div class="topBar">
+  <div class="topBar" *ngIf="page == 'desktop'">
     <div class="logo" (click)="redirect('https://ubyfol.com/')"></div>
     <div class="sections">
       <div class="section"><a href="#aboutHack" appScrollSuave>Sobre</a></div>
@@ -16,6 +16,11 @@
       </div>
     </div>
   </div>
+  <div class="topBar" *ngIf="page == 'mobile'" >
+    <div class="logo" (click)="redirect('https://ubyfol.com/')"></div>
+    <mat-icon svgIcon="menu" class="menu"  aria-hidden="false" aria-label="menu"></mat-icon>
+
+  </div>
   <div class="banner">
     <div class="inscription">
       <button (click)="subscribe()">INSCREVER-SE</button>
@@ -31,8 +36,8 @@
     </div>
   </div>
   <div id="aboutHack" class="aboutHack" data-aos="fade-right">
-    <div class="divFigure">
-      <div class="figure"></div>
+    <div class="divFigure" *ngIf="page == 'desktop' ">
+      <div class="figure" *ngIf="page == 'desktop' "></div>
     </div>
     <div class="aboutTheHack">
       <div class="title">
@@ -327,7 +332,7 @@
       </div>
 
       <div class="carrousel">
-        <app-carousel></app-carousel>
+        <app-carousel class="card"></app-carousel>
       </div>
     </div>
   </div>
