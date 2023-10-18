@@ -70,13 +70,12 @@
     flex-direction: column;
     justify-content: center;
 
-
     .inscription {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top:58vh;
+      margin-top: 58vh;
       gap: 1rem;
 
       button {
@@ -115,8 +114,8 @@
 
   .aboutHack {
     width: 100%;
-    height:74vh;
-    
+    height: 74vh;
+
     padding-top: 4.4vh;
     background: rgb(0, 172, 89);
     background: radial-gradient(
@@ -166,9 +165,10 @@
       padding-right: 15%;
       gap: 1.8vh;
       align-items: center;
+      
       .title {
         width: 100%;
-        
+
         display: flex;
         align-items: left;
 
@@ -192,7 +192,7 @@
           margin-bottom: 20px;
           display: flex;
           width: 100%;
-         
+
           margin-bottom: 50px;
 
           span {
@@ -366,7 +366,6 @@
     flex-direction: column;
     background-repeat: no-repeat;
     background-image: url(../assets/img/web2.png);
-   
 
     .title {
       width: 100%;
@@ -635,6 +634,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         width: 40%;
         height: 100%;
 
@@ -650,7 +651,7 @@
 
         .text {
           width: 70%;
-          height: 70%;
+          height: 75%;
           display: flex;
           text-align: center;
 
@@ -812,7 +813,7 @@
             background-image: url(../assets/img/parque.png);
             background-repeat: no-repeat;
             border-radius: 10px;
-            background-size: contain;
+            background-size: 300px;
             background-position: center;
             transition: 400ms linear;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -1001,77 +1002,55 @@
 }
 @media (min-width: 1200px) {
   .page {
-   
-  
     .topBar {
-     
       .logo {
-        
       }
-  
+
       .sections {
-      
-  
         .section {
-          
-  
           a {
-          
-  
             &:hover {
-            
             }
           }
         }
       }
     }
-  
+
     .banner {
       background-size: cover;
       background-position: center;
       .inscription {
-  
         button {
-         
-  
           &:hover {
           }
         }
-  
+
         .about {
-  
           span {
           }
         }
       }
     }
-  
+
     .aboutHack {
-      height:100vh;
-      
-     
+      height: 100vh;
+
       .divFigure {
-      
         .figure {
-        
           &:hover {
-           
           }
         }
       }
-  
-      .aboutTheHack {
 
+      .aboutTheHack {
         .title {
-        
           h3 {
-          
           }
         }
-  
+
         .body {
-        gap: 0;
-        font-size: 2.2vh;
+          gap: 0;
+          font-size: 2.2vh;
           .text {
             margin-bottom: 0;
             span {
@@ -1079,16 +1058,12 @@
               margin-bottom: 2vh;
             }
           }
-  
+
           .line {
-       
-  
             fa-icon {
-   
             }
-  
+
             span {
-    
             }
           }
         }
@@ -1096,103 +1071,86 @@
     }
 
     #prize {
-       
       .prizeTitle {
         .title {
-  
           .celebration {
           }
         }
       }
-  
+
       .divFigures {
-  
         .leftPrize {
-  
           .man {
           }
         }
-  
+
         .rightPrize {
-          
           .subTitle {
           }
-  
+
           .prizes {
             width: 50vw;
             &:hover {
             }
-  
+
             .secondTheme {
             }
-  
+
             .prize {
             }
           }
         }
       }
     }
-  
+
     .moreAbout {
       background-position: -43% 7%;
-  
+
       .title {
-  
         span {
         }
       }
-  
+
       .lineItens {
         .item {
-  
           &:hover {
           }
-  
-          .body {
-    
-  
-            .line {
 
-  
+          .body {
+            .line {
               span {
               }
-  
+
               .point {
               }
             }
           }
         }
       }
-  
+
       .aboutDate {
-  
         .cardAbout {
-  
           &:hover {
           }
-  
+
           .titleAboutDate {
-  
             span {
             }
           }
-  
+
           .bodyAboutDate {
-  
             .local {
               span {
               }
             }
-  
+
             .lineAboutDate {
               .icon {
-  
                 fa-icon {
                 }
               }
-  
+
               .textAboutDate {
-  
                 span {
                 }
               }
@@ -1202,1024 +1160,954 @@
       }
     }
   }
+}
 
-  }
+@media (min-width: 1500px) {
+  .page {
+    .topBar {
+      .logo {
+      }
 
-  @media (min-width: 1500px) {
-    .page {
-     
-    
-      .topBar {
-       
-        .logo {
-          
-        }
-    
-        .sections {
-        
-    
-          .section {
-            
-    
-            a {
-            
-    
-              &:hover {
-              
-              }
+      .sections {
+        .section {
+          a {
+            &:hover {
             }
           }
         }
       }
-    
-      .banner {
-        background-size: cover;
-        background-position: center;
-        .inscription {
-    
-          button {
-           
-    
-            &:hover {
+    }
+
+    .banner {
+      background-size: cover;
+      background-position: center;
+      .inscription {
+        button {
+          &:hover {
+          }
+        }
+
+        .about {
+          span {
+          }
+        }
+      }
+    }
+
+    .aboutHack {
+      height: 72vh;
+
+      .divFigure {
+        .figure {
+          &:hover {
+          }
+        }
+      }
+
+      .aboutTheHack {
+        .title {
+          h3 {
+          }
+        }
+
+        .body {
+          .text {
+            span {
             }
           }
-    
-          .about {
-    
+
+          .line {
+            fa-icon {
+            }
+
             span {
             }
           }
         }
       }
-    
-      .aboutHack {
-        height:72vh;
-        
-       
-        .divFigure {
-        
-          .figure {
-          
-            &:hover {
-             
-            }
-          }
-        }
-    
-        .aboutTheHack {
-  
-          .title {
-          
-            h3 {
-            
-            }
-          }
-    
-          .body {
-          
-            .text {
-  
-              span {
-  
-              }
-            }
-    
-            .line {
-         
-    
-              fa-icon {
-     
-              }
-    
-              span {
-      
-              }
-            }
-          }
-        }
-      }
+    }
 
-      #prize {
-       
-        .prizeTitle {
-          .title {
-    
-            .celebration {
-            }
-          }
-        }
-    
-        .divFigures {
-    
-          .leftPrize {
-    
-            .man {
-            }
-          }
-    
-          .rightPrize {
-    
-            .subTitle {
-              
-            }
-    
-            .prizes {
-              width: 30vw;
-              &:hover {
-              }
-    
-              .secondTheme {
-              }
-    
-              .prize {
-              }
-            }
-          }
-        }
-      }
-    
-      .moreAbout {
-        background-position: -19% 1%;
-        background-size: 81vh;
-        
-    
+    #prize {
+      .prizeTitle {
         .title {
-    
-          span {
+          .celebration {
           }
         }
-    
-        .lineItens {
-          .item {
-    
-            &:hover {
-            }
-    
-            .body {
-      
-    
-              .line {
+      }
 
-    
-                span {
-                }
-    
-                .point {
-                }
-              }
+      .divFigures {
+        .leftPrize {
+          .man {
+          }
+        }
+
+        .rightPrize {
+          .subTitle {
+          }
+
+          .prizes {
+            width: 30vw;
+            &:hover {
+            }
+
+            .secondTheme {
+            }
+
+            .prize {
             }
           }
         }
-    
-        .aboutDate {
-    
-          .cardAbout {
-    
-            &:hover {
-            }
-    
-            .titleAboutDate {
-    
+      }
+    }
+
+    .moreAbout {
+      background-position: -19% 1%;
+      background-size: 81vh;
+
+      .title {
+        span {
+        }
+      }
+
+      .lineItens {
+        .item {
+          &:hover {
+          }
+
+          .body {
+            .line {
               span {
               }
-            }
-    
-            .bodyAboutDate {
-    
-              .local {
-                span {
-                }
-              }
-    
-              .lineAboutDate {
-                .icon {
-    
-                  fa-icon {
-                  }
-                }
-    
-                .textAboutDate {
-    
-                  span {
-                  }
-                }
+
+              .point {
               }
             }
           }
         }
       }
 
-      .carrouselContainer {
-        width: 100%;
-        height: 37rem;
-        background: radial-gradient(
-          circle,
-          rgba(0, 201, 104, 0.712) 0%,
-          rgb(0, 196, 101) 100%
-        );
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        .mainItens {
-          width: 100%;
-          height: 600px;
-          display: flex;
-    
-          .mainCard {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 40%;
-            height: 100%;
-    
-            .title {
-              width: 100%;
-              height: 25%;
-              background-image: url(../assets/img/Logo-Ubyfol-Branco.png);
-              background-size: contain;
-              background-repeat: no-repeat;
-              background-size: contain;
-              background-position: center;
-            }
-    
-            .text {
-              width: 70%;
-              height: 70%;
-              display: flex;
-              text-align: center;
-    
-              span {
-                font-size: 1vw;
-                font-weight: bold;
-                font-family: DiscoverLight;
-                color: #ffffff;
-              }
+      .aboutDate {
+        .cardAbout {
+          &:hover {
+          }
+
+          .titleAboutDate {
+            span {
             }
           }
-    
-          .carrousel {
-            padding-right: 3%;
-            width: 60%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-    
-            .card {
-              height: 80%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              flex-direction: column;
-              width: 100%;
-    
-              .cardTitle {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-position: center;
-                height: 10rem;
-                background-size: contain;
-                width: 50%;
-                background-repeat: no-repeat;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+
+          .bodyAboutDate {
+            .local {
+              span {
               }
-    
-              .cardBody {
-                margin-top: 10px;
-                text-align: center;
-                height: 60%;
-                display: flex;
-                padding-inline: 5%;
-                align-content: center;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.4rem;
-                font-family: DiscoverRegular;
-                color: #ffffffb4;
-                font-weight: bold;
+            }
+
+            .lineAboutDate {
+              .icon {
+                fa-icon {
+                }
+              }
+
+              .textAboutDate {
+                span {
+                }
               }
             }
           }
         }
       }
     }
-  
-  }
 
-  @media (max-width: 420px) {
-    .page {
-     overflow: hidden;
-    
-      .topBar {
+    .carrouselContainer {
+      width: 100%;
+      height: 37rem;
+      background: radial-gradient(
+        circle,
+        rgba(0, 201, 104, 0.712) 0%,
+        rgb(0, 196, 101) 100%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .mainItens {
+        width: 100%;
+        height: 600px;
         display: flex;
-        padding-inline: 3%;
-        justify-content: space-between;
-        align-items: center;
-        .logo {
-          background-size: contain;
-          width: 38vw;
+
+        .mainCard {
           display: flex;
+          flex-direction: column;
           align-items: center;
-          background-position: center;
-          justify-content: center;
-        }
-        .menu{
-          width: 10vw;
-          height: 10vw;
-        }
-    
-        .sections {
-        
-    
-          .section {
-            
-    
-            a {
-            
-    
-              &:hover {
-              
-              }
+          width: 40%;
+          height: 100%;
+
+          .title {
+            width: 100%;
+            height: 25%;
+            background-image: url(../assets/img/Logo-Ubyfol-Branco.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+
+          .text {
+            width: 70%;
+            height: 70%;
+            display: flex;
+            text-align: center;
+
+            span {
+              font-size: 1vw;
+              font-weight: bold;
+              font-family: DiscoverLight;
+              color: #ffffff;
             }
           }
         }
-      
+
+        .carrousel {
+          padding-right: 3%;
+          width: 60%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+
+          .card {
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+
+            .cardTitle {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-position: center;
+              height: 10rem;
+              background-size: contain;
+              width: 50%;
+              background-repeat: no-repeat;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .cardBody {
+              margin-top: 10px;
+              text-align: center;
+              height: 60%;
+              display: flex;
+              padding-inline: 5%;
+              align-content: center;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.4rem;
+              font-family: DiscoverRegular;
+              color: #ffffffb4;
+              font-weight: bold;
+            }
+          }
+        }
       }
-      .menuSections{
-        top: 0vh;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .page {
+    overflow: hidden;
+
+    .topBar {
+      display: flex;
+      padding-inline: 3%;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        background-size: contain;
+        width: 38vw;
         display: flex;
-        flex-direction: column;
-        height: 58rem;
-        width: 100%;
-        position: fixed;
-        background-color: #04395a;
-        color: white;
-        justify-content: center;
         align-items: center;
-        z-index: 100;
-        padding-inline: 0 !important;
-        gap: 10vh;
-        font-family: DiscoverLight;
-        .section{
+        background-position: center;
+        justify-content: center;
+      }
+      .menu {
+        width: 10vw;
+        height: 10vw;
+      }
+
+      .sections {
+        .section {
+          a {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+    .menuSections {
+      top: 0vh;
+      display: flex;
+      flex-direction: column;
+      height: 58rem;
+      width: 100%;
+      position: fixed;
+      background-color: #04395a;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      padding-inline: 0 !important;
+      gap: 10vh;
+      font-family: DiscoverLight;
+      .section {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        a {
           text-decoration: none;
           color: white;
-          display: flex;
-          a{
-            text-decoration: none;
-            color: white;
-            font-size: 3vh;
-          }
+          font-size: 3vh;
         }
       }
-    
-      .banner {
-        background-image: url(../assets/img/background.png);
-        background-size:  153vw 44vh;
-        background-position: -100px 55px;
-        background-color: #04395a;
-        .inscription {
-          margin-top: 22vh;
-          gap: 0;
-          button {
-           height: 60px;
-            &:hover {
-            }
-          }
-    
-          .about {
-           height:fit-content ; 
-           padding-top: 2rem;
-            span {
-              font-size: 22px;
-            }
-          }
-        }
-      }
-    
-      .aboutHack {
-        height:72vh;
-        padding-top: 0;
-       
-        .divFigure {
-        
-          .figure {
-          
-            &:hover {
-             
-            }
-          }
-        }
-    
-        .aboutTheHack {
-          padding: 0;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-          .title {
-            align-items: center;
-            justify-content: center;
-            h3 {
-              font-size: 9vw;
-            }
-          }
-    
-          .body {
-          padding-inline:7vw;
-            .text {
-              margin: 0;
-              span {
-                font-size: 3.7vw;
-              }
-            }
-    
-            .line {
-         
-    
-              fa-icon {
-     
-              }
-    
-              span {
-                font-size: 3.7vw;
-              }
-            }
-          }
-        }
-      }
+    }
 
-      #prize {
-       height: 100vh;
-       margin-top: 0;
-       justify-content: unset;
-       height: 100vh;
-        .prizeTitle {
-          margin-bottom: 15%;
-          .title {
-    
-            .celebration {
-            }
+    .banner {
+      background-image: url(../assets/img/background.png);
+      background-size: 153vw 44vh;
+      background-position: -100px 55px;
+      background-color: #04395a;
+      .inscription {
+        margin-top: 22vh;
+        gap: 0;
+        button {
+          height: 60px;
+          &:hover {
           }
         }
-    
-        .divFigures {
-          flex-direction: column;
-          height: 50%;
-          justify-content: center;
-          align-items: center;
 
-          .leftPrize {
-            background-size: 217px;
-            background-position: 86px -20px;
-            width: 100%;
-            .man {
-              top: 2.6%;
-              left: 37.5%;
-            }
-          }
-    
-          .rightPrize {
-            width: 100%;
-            .subTitle {
-              font-size: 6vw;
-              text-align: center;
-            }
-    
-            .prizes {
-              width: 90vw;
-              margin-inline: 0;
-              &:hover {
-              }
-    
-              .secondTheme {
-              }
-    
-              .prize {
-              }
-            }
-          }
-        }
-      }
-    
-      .moreAbout {
-        background-position: -19% 1%;
-        background-size: 1px;
-        height: 100vh;    
-        .title {
-          
+        .about {
+          height: fit-content;
+          padding-top: 2rem;
           span {
-            font-size: 33px;
+            font-size: 22px;
           }
         }
-    
-        .lineItens {
-          justify-content: unset;
-          .item {
-            margin-inline: 9%;
-            &:hover {
-            }
-    
-            .body {
-              width: 26vw;
-    
-              .line {
+      }
+    }
 
-    
-                span {
-                  font-size:19px;
-                }
-    
-                .point {
-                }
-              }
+    .aboutHack {
+      height: 72vh;
+      padding-top: 0;
+
+      .divFigure {
+        .figure {
+          &:hover {
+          }
+        }
+      }
+
+      .aboutTheHack {
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+        .title {
+          align-items: center;
+          justify-content: center;
+          h3 {
+            font-size: 9vw;
+          }
+        }
+
+        .body {
+          padding-inline: 7vw;
+          .text {
+            margin: 0;
+            span {
+              font-size: 3.7vw;
+            }
+          }
+
+          .line {
+            fa-icon {
+            }
+
+            span {
+              font-size: 3.7vw;
             }
           }
         }
-    
-        .aboutDate {
-    
-          .cardAbout {
-            width: 84%;
-    
+      }
+    }
+
+    #prize {
+      height: 100vh;
+      margin-top: 0;
+      justify-content: unset;
+      height: 100vh;
+      .prizeTitle {
+        margin-bottom: 15%;
+        .title {
+          .celebration {
+          }
+        }
+      }
+
+      .divFigures {
+        flex-direction: column;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+
+        .leftPrize {
+          background-size: 217px;
+          background-position: 86px -20px;
+          width: 100%;
+          .man {
+            top: 2.6%;
+            left: 37.5%;
+          }
+        }
+
+        .rightPrize {
+          width: 100%;
+          .subTitle {
+            font-size: 6vw;
+            text-align: center;
+          }
+
+          .prizes {
+            width: 90vw;
+            margin-inline: 0;
             &:hover {
             }
-    
-            .titleAboutDate {
-    
-              span {
-              }
+
+            .secondTheme {
             }
-    
-            .bodyAboutDate {
-    
-              .local {
-                span {
-                }
+
+            .prize {
+            }
+          }
+        }
+      }
+    }
+
+    .moreAbout {
+      background-position: -19% 1%;
+      background-size: 1px;
+      height: 100vh;
+      .title {
+        span {
+          font-size: 33px;
+        }
+      }
+
+      .lineItens {
+        justify-content: unset;
+        .item {
+          margin-inline: 9%;
+          &:hover {
+          }
+
+          .body {
+            width: 26vw;
+
+            .line {
+              span {
+                font-size: 19px;
               }
-    
-              .lineAboutDate {
-                .icon {
-                  width: 18%;
-                  fa-icon {
-                  }
-                }
-    
-                .textAboutDate {
-    
-                  span {
-                    font-size: 3vw;
-                  }
-                }
+
+              .point {
               }
             }
           }
         }
       }
 
-      .carrouselContainer {
-        width: 100%;
-        height: 37rem;
-        background: radial-gradient(
-          circle,
-          rgba(0, 201, 104, 0.712) 0%,
-          rgb(0, 196, 101) 100%
-        );
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-inline: 3%;
-    
-        .mainItens {
-          width: 100%;
-          height: 600px;
-          display: flex;
-          flex-direction: column;
-          .mainCard {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width:100%;
-            height: 100%;
-    
-            .title {
-              width: 100%;
-              height: 100%;
-              background-image: url(../assets/img/Logo-Ubyfol-Branco.png);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-size: contain;
-              background-position: center;
+      .aboutDate {
+        .cardAbout {
+          width: 84%;
+
+          &:hover {
+          }
+
+          .titleAboutDate {
+            span {
             }
-    
-            .text {
-              width: 100%;
-              height: 100%;
-              display: flex;
-              text-align: center;
-    
+          }
+
+          .bodyAboutDate {
+            .local {
               span {
-                font-size: 3.6vw;
-                font-weight: bold;
-                font-family: DiscoverLight;
-                color: #ffffff;
+              }
+            }
+
+            .lineAboutDate {
+              .icon {
+                width: 18%;
+                fa-icon {
+                }
+              }
+
+              .textAboutDate {
+                span {
+                  font-size: 3vw;
+                }
               }
             }
           }
-    
-          .carrousel {
-            padding-right: 3%;
-            width:100%;
+        }
+      }
+    }
+
+    .carrouselContainer {
+      width: 100%;
+      height: 37rem;
+      background: radial-gradient(
+        circle,
+        rgba(0, 201, 104, 0.712) 0%,
+        rgb(0, 196, 101) 100%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-inline: 3%;
+
+      .mainItens {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        .mainCard {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+
+          .title {
+            width: 100%;
             height: 100%;
+            background-image: url(../assets/img/Logo-Ubyfol-Branco.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+
+          .text {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            text-align: center;
+
+            span {
+              font-size: 3.6vw;
+              font-weight: bold;
+              font-family: DiscoverLight;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .carrousel {
+          padding-right: 3%;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+
+          .card {
+            height: 80%;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 10px;
-    
-            .card {
-              height: 80%;
+            flex-direction: column;
+            width: 100%;
+
+            .cardTitle {
               display: flex;
               align-items: center;
               justify-content: center;
-              flex-direction: column;
-              width: 100%;
-    
-              .cardTitle {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-position: center;
-                height: 10rem;
-                background-size: contain;
-                width: 50%;
-                background-repeat: no-repeat;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
-    
-              .cardBody {
-                margin-top: 10px;
-                text-align: center;
-                height: 60%;
-                display: flex;
-                padding-inline: 5%;
-                align-content: center;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.4rem;
-                font-family: DiscoverRegular;
-                color: #ffffffb4;
-                font-weight: bold;
-              }
+              background-position: center;
+              height: 10rem;
+              background-size: contain;
+              width: 50%;
+              background-repeat: no-repeat;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .cardBody {
+              margin-top: 10px;
+              text-align: center;
+              height: 60%;
+              display: flex;
+              padding-inline: 5%;
+              align-content: center;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.4rem;
+              font-family: DiscoverRegular;
+              color: #ffffffb4;
+              font-weight: bold;
             }
           }
         }
       }
+    }
 
-      .goals {
+    .goals {
+      width: 100%;
+      height: 80vh;
+      background: rgb(4, 57, 90);
+      background: radial-gradient(
+        circle,
+        rgba(4, 57, 90, 0.865983893557423) 0%,
+        rgba(15, 85, 129, 1) 97%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+
+      .titleGoals {
         width: 100%;
-        height: 80vh;
-        background: rgb(4, 57, 90);
-        background: radial-gradient(
-          circle,
-          rgba(4, 57, 90, 0.865983893557423) 0%,
-          rgba(15, 85, 129, 1) 97%
-        );
+        height: 32%;
+        margin-top: 3%;
         display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2%;
+
+        span {
+          font-size: 40px;
+          font-weight: bold;
+          font-family: DiscoverRegular;
+          color: #bfd1dd;
+        }
+      }
+
+      .textGoals {
+        width: 80%;
+        height: 70%;
+        line-height: 9vw;
+        span {
+          font-weight: bold;
+          font-family: DiscoverLight;
+          font-size: 19px;
+          text-align: center;
+        }
+
+        .lastText {
+          font-style: italic;
+          color: #032d47;
+        }
+      }
+    }
+
+    .supporters {
+      width: 100%;
+      height: 80vh;
+      background: rgb(0, 172, 89);
+      background: radial-gradient(
+        circle,
+        rgba(0, 172, 89, 0.711922268907563) 0%,
+        rgb(41, 127, 153) 100%
+      );
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+
+      .title {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1%;
+
+        span {
+          font-size: 50px;
+          font-weight: bold;
+          font-family: DiscoverRegular;
+          color: #032d47;
+        }
+      }
+
+      .divSuporters {
+        width: 100%;
+        height: 85%;
         align-items: center;
         justify-content: center;
         text-align: center;
-        flex-direction: column;
-    
-        .titleGoals {
-          width: 100%;
-          height: 32%;
-          margin-top: 3%;
-          display: flex;
-          text-align: center;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 2%;
-    
-          span {
-            font-size: 40px;
-            font-weight: bold;
-            font-family: DiscoverRegular;
-            color: #bfd1dd;
-          }
-        }
-    
-        .textGoals {
-          width: 80%;
-          height: 70%;
-          line-height: 9vw;
-          span {
-            font-weight: bold;
-            font-family: DiscoverLight;
-            font-size: 19px;
-            text-align: center;
-          }
-    
-          .lastText {
-            font-style: italic;
-            color: #032d47;
-          }
-        }
-      }
-
-      .supporters {
-        width: 100%;
-        height: 80vh;
-        background: rgb(0, 172, 89);
-        background: radial-gradient(
-          circle,
-          rgba(0, 172, 89, 0.711922268907563) 0%,
-          rgb(41, 127, 153) 100%
-        );
-        flex-direction: column;
         display: flex;
-        align-items: center;
-    
-        .title {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .divSuportersItens {
           width: 100%;
-          height: 20%;
+          height: 50%;
           display: flex;
-          text-align: center;
           align-items: center;
           justify-content: center;
-          margin-bottom: 1%;
-    
-          span {
-            font-size: 50px;
-            font-weight: bold;
-            font-family: DiscoverRegular;
-            color: #032d47;
+          text-align: center;
+          flex-wrap: wrap;
+
+          .supporter1 {
+            width: 29%;
+            height: 70%;
+            margin-right: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            .image {
+              width: 100%;
+              height: 80%;
+              background-color: rgb(255, 255, 255);
+              background-image: url(../assets/img/FAZU.png);
+              background-repeat: no-repeat;
+              border-radius: 10px;
+              background-size: contain;
+              background-position: center;
+              transition: 400ms linear;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+              &:hover {
+                transform: translateY(-20px);
+                transition: 400ms linear;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .supporter2 {
+            width: 29%;
+            height: 70%;
+            margin-left: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            .image {
+              width: 100%;
+              height: 80%;
+              background-color: rgba(236, 236, 236, 0.534);
+              background-image: url(../assets/img/parque.png);
+              background-repeat: no-repeat;
+              border-radius: 10px;
+              background-size: contain;
+              background-position: center;
+              transition: 400ms linear;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+              &:hover {
+                transform: translateY(-20px);
+                transition: 400ms linear;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .supporter3 {
+            width: 31%;
+            height: 70%;
+            margin-left: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-inline: 22rem;
+            .image {
+              width: 100vw;
+              height: 80vw;
+              background-color: rgba(236, 236, 236, 0.534);
+              background-image: url(../assets/img/Logo-Ubyfol-Branco.png);
+              background-repeat: no-repeat;
+              border-radius: 10px;
+              background-size: contain;
+              background-position: center;
+              background-size: cover;
+            }
           }
         }
-    
-        .divSuporters {
+
+        .foot {
+          position: relative;
           width: 100%;
-          height: 85%;
+          height: 50%;
           align-items: center;
           justify-content: center;
           text-align: center;
           display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-    
-          .divSuportersItens {
+
+          .footItens {
             width: 100%;
-            height: 50%;
+            height: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.411);
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-wrap: wrap;
-    
-            .supporter1 {
-              width: 29%;
-              height: 70%;
-              margin-right: 1%;
+            gap: 2%;
+            padding-top: 1%;
+
+            .uby {
+              width: 40%;
+              height: 25%;
               display: flex;
-              flex-direction: column;
               align-items: center;
-              text-align: center;
               justify-content: center;
-    
-              .image {
-                width: 100%;
-                height: 80%;
-                background-color: rgb(255, 255, 255);
-                background-image: url(../assets/img/FAZU.png);
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                background-size: contain;
-                background-position: center;
-                transition: 400ms linear;
-                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-                  rgba(0, 0, 0, 0.12) 0px -12px 30px,
-                  rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                  rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
-                &:hover {
-                  transform: translateY(-20px);
-                  transition: 400ms linear;
-                  cursor: pointer;
-                }
+
+              span {
+                color: white;
+                font-family: DiscoverRegular;
+                font-size: 3.2vw;
               }
             }
-    
-            .supporter2 {
-              width: 29%;
-              height: 70%;
-              margin-left: 1%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              text-align: center;
-              justify-content: center;
-    
-              .image {
-                width: 100%;
-                height: 80%;
-                background-color: rgba(236, 236, 236, 0.534);
-                background-image: url(../assets/img/parque.png);
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                background-size: contain;
-                background-position: center;
-                transition: 400ms linear;
-                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-                  rgba(0, 0, 0, 0.12) 0px -12px 30px,
-                  rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                  rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
-                &:hover {
-                  transform: translateY(-20px);
-                  transition: 400ms linear;
-                  cursor: pointer;
-                }
-              }
-            }
-    
-            .supporter3 {
-              width: 31%;
-              height: 70%;
-              margin-left: 1%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              text-align: center;
-              justify-content: center;
-              margin-inline: 22rem;
-              .image {
-                width: 100vw;
-                height: 80vw;
-                background-color: rgba(236, 236, 236, 0.534);
-                background-image: url(../assets/img/Logo-Ubyfol-Branco.png);
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                background-size: contain;
-                background-position: center;
-                background-size: cover;
-              }
-            }
-          }
-    
-          .foot {
-            position: relative;
-            width: 100%;
-            height: 50%;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            display: flex;
-    
-            .footItens {
-              width: 100%;
+
+            .russianCorp {
+              width: 68%;
               height: 100%;
-              border-top: 1px solid rgba(255, 255, 255, 0.411);
               display: flex;
+              text-align: right;
               gap: 2%;
-              padding-top: 1%;
-    
-              .uby {
-                width: 40%;
-                height: 25%;
+              display: none;
+
+              .text {
+                width: 50%;
+                height: 26%;
+                padding-right: 2%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-  
+
                 span {
                   color: white;
                   font-family: DiscoverRegular;
-                  font-size: 3.2vw;
+                  font-size: 3.3vw;
                 }
               }
-    
-              .russianCorp {
-                width: 68%;
-                height: 100%;
-                display: flex;
-                text-align: right;
-                gap: 2%;
-                display: none;
-    
-                .text {
-                  width: 50%;
-                  height: 26%;
-                  padding-right: 2%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-    
-                  span {
-                    color: white;
-                    font-family: DiscoverRegular;
-                    font-size: 3.3vw;
-                  }
-                }
-    
-                .figure {
-                  width: 36%;
-                  height: 26%;
-                  background-image: url(../assets/img/russianCorp.png);
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: 15%;
-                  background-size: contain;
+
+              .figure {
+                width: 36%;
+                height: 26%;
+                background-image: url(../assets/img/russianCorp.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 15%;
+                background-size: contain;
+              }
+            }
+
+            .socialMedias {
+              width: 55%;
+              height: 28%;
+              display: flex;
+              gap: 3.3%;
+              align-items: center;
+
+              .instagram {
+                width: 35%;
+                height: 43%;
+                background-image: url(../assets/img/instagram.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                transition: 200ms linear;
+
+                &:hover {
+                  cursor: pointer;
+                  transform: scale(1.1);
+                  transition: 200ms linear;
                 }
               }
-    
-              .socialMedias {
-                width: 55%;
-                height: 28%;
-                display: flex;
-                gap: 3.3%;
-                align-items: center;
-    
-                .instagram {
-                  width: 35%;
-                  height: 43%;
-                  background-image: url(../assets/img/instagram.png);
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: contain;
+
+              .facebook {
+                width: 35%;
+                height: 43%;
+                background-image: url(../assets/img/facebook.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                transition: 200ms linear;
+
+                &:hover {
+                  cursor: pointer;
+                  transform: scale(1.1);
                   transition: 200ms linear;
-    
-                  &:hover {
-                    cursor: pointer;
-                    transform: scale(1.1);
-                    transition: 200ms linear;
-                  }
                 }
-    
-                .facebook {
-                  width: 35%;
-                  height: 43%;
-                  background-image: url(../assets/img/facebook.png);
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: contain;
+              }
+
+              .youtube {
+                width: 35%;
+                height: 43%;
+                background-image: url(../assets/img/youtube.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                transition: 200ms linear;
+
+                &:hover {
+                  cursor: pointer;
+                  transform: scale(1.1);
                   transition: 200ms linear;
-    
-                  &:hover {
-                    cursor: pointer;
-                    transform: scale(1.1);
-                    transition: 200ms linear;
-                  }
                 }
-    
-                .youtube {
-                  width: 35%;
-                  height: 43%;
-                  background-image: url(../assets/img/youtube.png);
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: contain;
+              }
+
+              .linkedin {
+                width: 35%;
+                height: 43%;
+                background-image: url(../assets/img/linkedin.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                transition: 200ms linear;
+
+                &:hover {
+                  cursor: pointer;
+                  transform: scale(1.1);
                   transition: 200ms linear;
-    
-                  &:hover {
-                    cursor: pointer;
-                    transform: scale(1.1);
-                    transition: 200ms linear;
-                  }
                 }
-    
-                .linkedin {
-                  width: 35%;
-                  height: 43%;
-                  background-image: url(../assets/img/linkedin.png);
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: contain;
+              }
+
+              .gupy {
+                width: 60%;
+                height: 48%;
+                background-image: url(../assets/img/gupy.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                transition: 200ms linear;
+
+                &:hover {
+                  cursor: pointer;
+                  transform: scale(1.1);
                   transition: 200ms linear;
-    
-                  &:hover {
-                    cursor: pointer;
-                    transform: scale(1.1);
-                    transition: 200ms linear;
-                  }
-                }
-    
-                .gupy {
-                  width: 60%;
-                  height: 48%;
-                  background-image: url(../assets/img/gupy.png);
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: contain;
-                  transition: 200ms linear;
-    
-                  &:hover {
-                    cursor: pointer;
-                    transform: scale(1.1);
-                    transition: 200ms linear;
-                  }
                 }
               }
             }
@@ -2227,6 +2115,5 @@
         }
       }
     }
-  
   }
-  
+}

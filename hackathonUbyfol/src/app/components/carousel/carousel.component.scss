@@ -38,17 +38,20 @@ body {
     }
     &:nth-of-type(2) {
       background: url(../../../assets/img/allas.png);
-      background-size:contain;     background-position: center;
+      background-size:130px;     
+      background-position: center;
       background-repeat: no-repeat;
     }
     &:nth-of-type(3) {
       background: url(../../../assets/img/vitales.png);
-      background-size:contain !important;     background-position: center;
+      background-size:120px !important;     
+      background-position: center;
       background-repeat: no-repeat;
     }
     &:nth-of-type(4) {
       background: url(../../../assets/img/ubycover.png);
-      background-size:contain;     background-position: center;
+      background-size:150px;     
+      background-position: center;
       background-repeat: no-repeat;
     }
     
