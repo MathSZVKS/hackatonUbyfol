@@ -36,7 +36,7 @@
   </div>
   <div class="banner">
     <div class="inscription">
-      <button (click)="subscribe()">INSCREVER-SE</button>
+      <button >INSCRIÇÕES ENCERRADAS</button>
       <div class="about" style="margin-top: 1.5%">
         <span
           >O Hackathon será presencial em Uberaba - MG e começará no dia 27 de
@@ -148,7 +148,7 @@
             </div>
             <div class="textAboutDate">
               <span *ngIf="selectedDiv == '27'"
-                >19h00 - Abertura do evento com a participação de representantes
+                >18h40 - Palestras com a participação de representantes
                 da Ubyfol, Fazu e Parque Tecnológico</span
               >
               <span *ngIf="selectedDiv == '28'"
@@ -164,7 +164,7 @@
               <fa-icon [icon]="faCheckCircle"></fa-icon>
             </div>
             <div class="textAboutDate">
-              <span *ngIf="selectedDiv == '27'">19h15 - Palestra Magna</span>
+              <span *ngIf="selectedDiv == '27'">19h30 - Criação das equipes</span>
               <span *ngIf="selectedDiv == '28'"
                 >10h00 - Criação das soluções pelas equipes</span
               >
@@ -180,7 +180,7 @@
             </div>
             <div class="textAboutDate">
               <span *ngIf="selectedDiv == '27'"
-                >20h00 - Apresentação dos Desafios - Temáticas</span
+                >19h30 - Criação das equipes</span
               >
               <span *ngIf="selectedDiv == '28'"
                 >13h00 - Atividades de mentoria (minicurso de pitch)</span
@@ -197,10 +197,10 @@
             </div>
             <div class="textAboutDate">
               <span *ngIf="selectedDiv == '27'"
-                >20h20 - Criação das Equipes</span
+                >20h00 - Apresentação dos Desafios</span
               >
               <span *ngIf="selectedDiv == '28'"
-                >15h00 - Desenvolvimento das soluções pelas equipes</span
+                >14h00 - Desenvolvimento das soluções pelas equipes</span
               >
               <span *ngIf="selectedDiv == '29'"
                 >11h00 - Desenvolvimento das soluções pelas equipes</span
@@ -213,7 +213,7 @@
             </div>
             <div class="textAboutDate">
               <span *ngIf="selectedDiv == '27'"
-                >21h20 - Dinâmica de integração de grupos.</span
+                >20h30 - Sorteio Temáticas.</span
               >
               <br />
               <span *ngIf="selectedDiv == '27'"
@@ -231,12 +231,32 @@
               >
             </div>
           </div>
+          <div *ngIf="selectedDiv == '29'"class="lineAboutDate">
+            <div class="icon">
+              <fa-icon [icon]="faCheckCircle"></fa-icon>
+            </div>
+            <div class="textAboutDate" *ngIf="selectedDiv == '29'">
+              <span *ngIf="selectedDiv == '29'"
+                >15h50 - Avaliação Jurados - Consolidação de Resultados</span
+              >
+            </div>
+          </div>
+          <div  *ngIf="selectedDiv == '29'" class="lineAboutDate">
+            <div class="icon">
+              <fa-icon [icon]="faCheckCircle"></fa-icon>
+            </div>
+            <div class="textAboutDate" *ngIf="selectedDiv == '29'">
+              <span *ngIf="selectedDiv == '29'"
+                >16h20 - Premiação Final</span
+              >
+            </div>
+          </div>
           <div *ngIf="selectedDiv == '27'" class="lineAboutDate">
             <div class="icon">
               <fa-icon [icon]="faCheckCircle"></fa-icon>
             </div>
             <div class="textAboutDate">
-              <span *ngIf="selectedDiv == '27'">22h00 - Encerramento.</span>
+              <span *ngIf="selectedDiv == '27'">21h30 - Encerramento.</span>
             </div>
           </div>
           <div *ngIf="selectedDiv == '28'" class="lineAboutDate">
@@ -256,7 +276,7 @@
             </div>
             <div class="textAboutDate">
               <span *ngIf="selectedDiv == '28'"
-                >19h00 - Desenvolvimento das soluções pelas equipes
+                >00h00 - Desenvolvimento das soluções pelas equipes
                 (virada)</span
               >
             </div>
