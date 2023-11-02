@@ -60,7 +60,7 @@
   .vencedores {
 
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     background-color: #04395a;
     display: flex;
     align-items: top;
@@ -124,7 +124,6 @@
 
     .descricao {
       width: 50%;
-      height: 55vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -132,16 +131,18 @@
 
       .tematica1 {
         width: 100%;
-        height: 50%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
 
         .tituloTematica {
           width: 100%;
-          height: 20%;
-
+          height: auto;
+          margin-top: 3rem;
+        
           span {
             font-family: DiscoverRegular;
             color: rgb(255, 255, 255);
@@ -151,8 +152,7 @@
         }
 
         .lugar1 {
-          width: 100%;
-          height: 10%;
+       
 
           span {
             font-family: DiscoverRegular;
@@ -162,9 +162,7 @@
         }
 
         .lugar2 {
-          width: 100%;
-          height: 10%;
-
+         
           span {
             font-family: DiscoverRegular;
             color: rgb(255, 255, 255);
@@ -175,11 +173,16 @@
 
       .tematica2 {
         width: 100%;
-        height: 50%;
-
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
         .tituloTematica {
           width: 100%;
-          height: 20%;
+          height: auto;
 
           span {
             font-family: DiscoverRegular;
@@ -191,7 +194,6 @@
 
         .lugar1 {
           width: 100%;
-          height: 10%;
 
           span {
             font-family: DiscoverRegular;
@@ -202,8 +204,6 @@
 
         .lugar2 {
           width: 100%;
-          height: 10%;
-
           span {
             font-family: DiscoverRegular;
             color: rgb(255, 255, 255);
@@ -651,7 +651,7 @@
           justify-content: center;
 
           span {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
             font-family: DiscoverRegular;
             color: #ffffff;
@@ -669,7 +669,7 @@
           .local {
             width: 100%;
             height: 10%;
-
+            margin-block: 2rem;
             span {
               font-size: 20px;
               font-weight: bold;
