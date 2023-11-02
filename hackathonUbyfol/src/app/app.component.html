@@ -16,17 +16,29 @@
       </div>
     </div>
   </div>
-  <div class="topBar" *ngIf="page == 'mobile'" >
+  <div class="topBar" *ngIf="page == 'mobile'">
     <div class="logo" (click)="redirect('https://ubyfol.com/')"></div>
-    <mat-icon (click)="openMenu()" svgIcon="menu" class="menu"  aria-hidden="false" aria-label="menu"></mat-icon>
+    <mat-icon
+      (click)="openMenu()"
+      svgIcon="menu"
+      class="menu"
+      aria-hidden="false"
+      aria-label="menu"
+    ></mat-icon>
   </div>
   <div class="menuSections" *ngIf="menuOpen">
-    <div (click)="openMenu()" class="section"><a href="#aboutHack" appScrollSuave>Sobre</a></div>
+    <div (click)="openMenu()" class="section">
+      <a href="#aboutHack" appScrollSuave>Sobre</a>
+    </div>
     <div (click)="openMenu()" class="section">
       <a href="#moreAbout" appScrollSuave>Cronograma</a>
     </div>
-    <div (click)="openMenu()" class="section"><a href="#prize" appScrollSuave>Premiação</a></div>
-    <div (click)="openMenu()" class="section"><a href="#goals" appScrollSuave>Objetivo</a></div>
+    <div (click)="openMenu()" class="section">
+      <a href="#prize" appScrollSuave>Premiação</a>
+    </div>
+    <div (click)="openMenu()" class="section">
+      <a href="#goals" appScrollSuave>Objetivo</a>
+    </div>
     <div (click)="openMenu()" class="section">
       <a href="#carrousel" appScrollSuave>Parceiros</a>
     </div>
@@ -34,9 +46,10 @@
       <a href="#supporters" appScrollSuave>Apoiadores</a>
     </div>
   </div>
+
   <div class="banner">
     <div class="inscription">
-      <button >INSCRIÇÕES ENCERRADAS</button>
+      <button>INSCRIÇÕES ENCERRADAS</button>
       <div class="about" style="margin-top: 1.5%">
         <span
           >O Hackathon será presencial em Uberaba - MG e começará no dia 27 de
@@ -48,9 +61,29 @@
       </div>
     </div>
   </div>
+  <div class="vencedores">
+    <div class="titulo"><span>Vencedores</span></div>
+    <div class="all">
+      <div class="foto">
+        <div class="card"><div class="fotoCard"></div></div>
+      </div>
+      <div class="descricao">
+        <div class="tematica1">
+          <div class="tituloTematica"><span>Temática Inovação</span></div>
+          <div class="lugar1"><span>1°Lugar: Code Wins</span></div>
+          <div class="lugar2"><span>2°Lugar: Bio Grow</span></div>
+        </div>
+        <div class="tematica2">
+          <div class="tituloTematica"><span>Temática de Acesso ao Mercado</span></div>
+          <div class="lugar1"><span>1°Lugar: Os Estagiários </span></div>
+          <div class="lugar2"><span>2°Lugar: Loop</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="aboutHack" class="aboutHack" data-aos="fade-right">
-    <div class="divFigure" *ngIf="page == 'desktop' ">
-      <div class="figure" *ngIf="page == 'desktop' "></div>
+    <div class="divFigure" *ngIf="page == 'desktop'">
+      <div class="figure" *ngIf="page == 'desktop'"></div>
     </div>
     <div class="aboutTheHack">
       <div class="title">
@@ -132,15 +165,21 @@
     <div class="aboutDate">
       <div class="cardAbout">
         <div class="titleAboutDate">
-          <span *ngIf="selectedDiv == '27'">Sexta-Feira (27/10/2023) - 18:30</span
+          <span *ngIf="selectedDiv == '27'"
+            >Sexta-Feira (27/10/2023) - 18:30</span
           ><span *ngIf="selectedDiv == '28'">Sábado (28/10/2023) - 08:00</span
           ><span *ngIf="selectedDiv == '29'">Domingo (29/10/2023) - 14:00</span>
         </div>
         <div class="bodyAboutDate">
           <div class="local">
-            <span *ngIf="selectedDiv == '27'">Local: MoonHub (Centro de Inovação | Praça do Conhecimento, 459 – Parque Tecnológico de Uberaba)</span
-            ><span *ngIf="selectedDiv == '28'">Local: Fazu (Av. do Tutuna, 720)</span
-            ><span *ngIf="selectedDiv == '29'">Local: Fazu (Av. do Tutuna, 720)</span>
+            <span *ngIf="selectedDiv == '27'"
+              >Local: MoonHub (Centro de Inovação | Praça do Conhecimento, 459 –
+              Parque Tecnológico de Uberaba)</span
+            ><span *ngIf="selectedDiv == '28'"
+              >Local: Fazu (Av. do Tutuna, 720)</span
+            ><span *ngIf="selectedDiv == '29'"
+              >Local: Fazu (Av. do Tutuna, 720)</span
+            >
           </div>
           <div class="lineAboutDate">
             <div class="icon">
@@ -148,8 +187,8 @@
             </div>
             <div class="textAboutDate">
               <span *ngIf="selectedDiv == '27'"
-                >18h40 - Palestras com a participação de representantes
-                da Ubyfol, Fazu e Parque Tecnológico</span
+                >18h40 - Palestras com a participação de representantes da
+                Ubyfol, Fazu e Parque Tecnológico</span
               >
               <span *ngIf="selectedDiv == '28'"
                 >08h00 - Atividades de mentoria (minicurso de Canvas)
@@ -164,7 +203,9 @@
               <fa-icon [icon]="faCheckCircle"></fa-icon>
             </div>
             <div class="textAboutDate">
-              <span *ngIf="selectedDiv == '27'">19h30 - Criação das equipes</span>
+              <span *ngIf="selectedDiv == '27'"
+                >19h30 - Criação das equipes</span
+              >
               <span *ngIf="selectedDiv == '28'"
                 >10h00 - Criação das soluções pelas equipes</span
               >
@@ -231,7 +272,7 @@
               >
             </div>
           </div>
-          <div *ngIf="selectedDiv == '29'"class="lineAboutDate">
+          <div *ngIf="selectedDiv == '29'" class="lineAboutDate">
             <div class="icon">
               <fa-icon [icon]="faCheckCircle"></fa-icon>
             </div>
@@ -241,14 +282,12 @@
               >
             </div>
           </div>
-          <div  *ngIf="selectedDiv == '29'" class="lineAboutDate">
+          <div *ngIf="selectedDiv == '29'" class="lineAboutDate">
             <div class="icon">
               <fa-icon [icon]="faCheckCircle"></fa-icon>
             </div>
             <div class="textAboutDate" *ngIf="selectedDiv == '29'">
-              <span *ngIf="selectedDiv == '29'"
-                >16h20 - Premiação Final</span
-              >
+              <span *ngIf="selectedDiv == '29'">16h20 - Premiação Final</span>
             </div>
           </div>
           <div *ngIf="selectedDiv == '27'" class="lineAboutDate">
@@ -299,7 +338,9 @@
       </div>
 
       <div class="rightPrize">
-        <div class="subTitle">Neste Hackathon teremos R$ 16.000,00 em premiações</div>
+        <div class="subTitle">
+          Neste Hackathon teremos R$ 16.000,00 em premiações
+        </div>
         <div class="prizes">
           <div class="firstTheme">
             <div class="prize">
